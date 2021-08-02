@@ -1,4 +1,4 @@
-const draggables = document.querySelectorAll('.draggable')
+const draggables = document.querySelectorAll('.astro-image')
 const containers = document.querySelectorAll('.container')
 
 draggables.forEach(draggable => {
