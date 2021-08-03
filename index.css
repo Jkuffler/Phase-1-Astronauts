@@ -18,14 +18,20 @@ html {
     background-size: cover;
 }
 
-/* div#space-station {
+#space-station {
     background-image: url(space-images/space-station.jpg);
-    width: 50%;
-    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 200px;
+    padding: 100px;
+    border: 1px solid black;
 }
 
-div#earth {
+#earth {
     background-image: url(space-images/earth.jpg);
-    width: 50%;
-    height: 50%;
-} */
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 300px;
+    padding: 100px;
+    border: 1px solid black;
+} 

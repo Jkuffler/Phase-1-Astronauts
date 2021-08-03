@@ -1,5 +1,6 @@
-const draggables = document.querySelectorAll('.astro-image')
+const draggables = document.querySelectorAll('.astroDrag')
 const containers = document.querySelectorAll('.container')
+
 
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () => {
@@ -20,6 +21,22 @@ containers.forEach(container => {
     })
 })
 
+function getAstros(){
+    fetch('http://api.open-notify.org/astros.json')
+.then(function (response) {
+    return response.json()
+})
+.then(function(astrosData) {
+    astrosData.forEach(function(astro){
+      renderAstro(astro);
+        })
+    })
+}
+
+
+
+
+
 // function dragElementPlacement(container, y) {
 //     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
 
@@ -31,3 +48,17 @@ containers.forEach(container => {
 
 
 
+
+// function allowDrop(ev) {
+//     ev.preventDefault();
+//   }
+  
+//   function drag(ev) {
+//     ev.dataTransfer.setData("text", ev.target.id);
+//   }
+  
+//   function drop(ev) {
+//     ev.preventDefault();
+//     var data = ev.dataTransfer.getData("text");
+//     ev.target.appendChild(document.getElementById(data));
+//   }
