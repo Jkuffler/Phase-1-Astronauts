@@ -1,15 +1,37 @@
 
 .astro-image:hover {
-    box-shadow: 0 0 6px 1px rgb(116, 115, 115);
+    box-shadow: 0 0 16px 1px rgb(116, 115, 115);
 }
 
 .astro-image {
 background-color: black;
-height: 100px;
-width: 100px;
+height: 120px;
+width: 120px;
 object-fit: contain;
 display: inline-block; /* makes it fit in like an <img> */
 background-size: cover; /* or contain */
 background-position: center center;
 background-repeat: no-repeat;
+cursor: move;
+padding: 10px;
+}
+
+
+html {
+    background: url(space-images/space.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#space-station {
+    background-image: url(space-images/space-station.jpg);
+    width: 50%;
+    height: 50%;
+}
+div#earth {
+    background-image: url(space-images/earth.jpg);
+    width: 50%;
+    height: 50%;
 }
