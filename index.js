@@ -34,8 +34,18 @@ containers.forEach(container => {
     })
 })
 
+ const bioSpan = document.createElement('span')
+ const bioInfo = document.createElement('ul')
+ const bioName = document.createElement('li')
+ 
 
 
+// alert(`${astro.name}`
+//     `${astro.nation}`
+//     `${astro.mission}`
+// )
+
+//******************************** THROW AWAY CODE????
 // const draggables = document.querySelectorAll('.astro-image')
 // const containers = document.querySelectorAll('.container')
 
