@@ -1,12 +1,15 @@
-.astro-image {
-    border: 5px solid rgb(66, 65, 65);
-    border-radius: 4px;
-    padding: 5px;
-    width: auto;
-    height: auto
-}
 
 .astro-image:hover {
     box-shadow: 0 0 6px 1px rgb(116, 115, 115);
 }
 
+.astro-image {
+background-color: black;
+height: 100px;
+width: 100px;
+object-fit: contain;
+display: inline-block; /* makes it fit in like an <img> */
+background-size: cover; /* or contain */
+background-position: center center;
+background-repeat: no-repeat;
+}
