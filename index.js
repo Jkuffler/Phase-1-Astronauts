@@ -13,7 +13,7 @@ function getAstros(){
 //image sources ISS
 
 //PYTOR DUBROV
-//<img src="https://www.nasa.gov/sites/default/files/thumbnails/image/jsc2021e010288.jpg" alt="Pyotr Dubrov" class="astro-image">
+<img src="https://www.nasa.gov/sites/default/files/thumbnails/image/jsc2021e010288.jpg" alt="Pyotr Dubrov" class="astro-image">
 
 
 //AKIHIKO HOSHIDE

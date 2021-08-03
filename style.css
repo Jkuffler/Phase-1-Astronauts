@@ -2,7 +2,8 @@
     border: 5px solid rgb(66, 65, 65);
     border-radius: 4px;
     padding: 5px;
-    width: 150px
+    width: auto;
+    height: auto
 }
 
 .astro-image:hover {
