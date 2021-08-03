@@ -5,8 +5,27 @@
     width: 150px;
     cursor: move;
 }
-}
 
 .astro-image:hover {
     box-shadow: 0 0 6px 1px rgb(116, 115, 115);
 }
+
+html {
+    background: url(space-images/space.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* div#space-station {
+    background-image: url(space-images/space-station.jpg);
+    width: 50%;
+    height: 50%;
+}
+
+div#earth {
+    background-image: url(space-images/earth.jpg);
+    width: 50%;
+    height: 50%;
+} */
