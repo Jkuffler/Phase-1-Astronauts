@@ -4,7 +4,7 @@
     padding: 5px;
     width: 150px;
     cursor: move;
-}
+} 
 
 
 .astro-image:hover {
@@ -21,7 +21,7 @@ html {
 
 #space-station {
     background-image: url(space-images/space-station.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 200px;
     padding: 100px;
@@ -30,7 +30,7 @@ html {
 
 #earth {
     background-image: url(space-images/earth.jpg);
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 300px;
     padding: 100px;

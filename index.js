@@ -1,28 +1,3 @@
-const draggables = document.querySelectorAll('.astroDrag')
-const containers = document.querySelectorAll('.container')
-
-
-//drag and drop feature works
-draggables.forEach(draggable => {
-    draggable.addEventListener('dragstart', () => {
-        draggable.classList.add('dragging');
-    })
-
-    draggable.addEventListener('dragend', () => {
-        draggable.classList.remove('dragging');
-    })
-})
-
-containers.forEach(container => {
-    container.addEventListener('dragover', (e) => {
-        // const afterElement = document.querySelector(container, e.clientY)
-        e.preventDefault();
-        const currentDrag = document.querySelector('.dragging')
-        container.appendChild(currentDrag)
-    })
-})
-//drag and drop feature works
-
 
 //attempt at displaying fetched data in span
 const getAstros = () => {
@@ -33,15 +8,62 @@ const getAstros = () => {
     })
 }
 
+
+
 const renderAstro = (astro) => {
     //create span, add class, id, and draggable attribute
+    const earthContainer = document.querySelector('#earth')
+    
     const astroSpan = document.createElement('span')
     astroSpan.classList = 'astroDrag'
     astroSpan.id = astro.name
     astroSpan.setAttribute('draggable', true)
 
-    console.log(astroSpan)
+    const astroImage = document.createElement('img')
+    astroImage.classList = 'astro-image'
+    astroImage.src = `./astro-images/${astro.name}.jpg`
+    astroSpan.append(astroImage)
+
+    earthContainer.append(astroSpan)
+
+    //spans are already looped through.
+    //Just add dragstart and dragend events
+    astroSpan.addEventListener('dragstart', () => {
+        astroSpan.classList.add('dragging');
+    })
+
+    astroSpan.addEventListener('dragend', () => {
+        astroSpan.classList.remove('dragging');
+    })
+
 }
+
+
+const containers = document.querySelectorAll('.container')
+
+
+const astrosContainer = () => {
+    containers.forEach(container => {
+    container.addEventListener('dragover', (e) => {
+        // const afterElement = document.querySelector(container, e.clientY)
+        e.preventDefault();
+        const currentDrag = document.querySelector('.dragging')
+        container.appendChild(currentDrag)
+    })
+})
+}
+//drag and drop feature works
+
+
+
+
+function init() {
+    getAstros();
+    // dragAstros();
+    astrosContainer();
+}
+
+init();
 
 
 // const spanInfo = (astro) => {
@@ -71,11 +93,7 @@ const renderAstro = (astro) => {
 
 
 
-// function init() {
-//     getAstros();
-// }
 
-// init();
 
 // function dragElementPlacement(container, y) {
 //     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
