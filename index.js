@@ -2,6 +2,7 @@ const draggables = document.querySelectorAll('.astroDrag')
 const containers = document.querySelectorAll('.container')
 
 
+//drag and drop feature works
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () => {
         draggable.classList.add('dragging');
@@ -20,22 +21,61 @@ containers.forEach(container => {
         container.appendChild(currentDrag)
     })
 })
+//drag and drop feature works
 
-function getAstros(){
+
+//attempt at displaying fetched data in span
+const getAstros = () => {
     fetch('http://api.open-notify.org/astros.json')
-.then(function (response) {
-    return response.json()
-})
-.then(function(astrosData) {
-    astrosData.forEach(function(astro){
-      renderAstro(astro);
-        })
+    .then(resp => resp.json())
+    .then((astroData) => {
+        astroData.people.forEach((astro) => renderAstro(astro))
     })
 }
 
+const renderAstro = (astro) => {
+    //create span, add class, id, and draggable attribute
+    const astroSpan = document.createElement('span')
+    astroSpan.classList = 'astroDrag'
+    astroSpan.id = astro.name
+    astroSpan.setAttribute('draggable', true)
+
+    console.log(astroSpan)
+}
+
+
+// const spanInfo = (astro) => {
+//     // const spanId = document.querySelectorAll()
+//     const astroName = document.createElement('h2')
+//     const astroCraft = document.createElement('h3')
+
+//     draggables.forEach(() => {
+//         draggables.addEventListener('click', () => {
+
+//         if( === astro.name){
+//             astroName.innerText = astro.name
+//             astroCraft.innerText = astro.craft
+//         }else{
+//             alert('Does not exist!')
+//         }
+
+//         })
+//     })
+//     let info = document.querySelector('#astroInfo')
+//     info.innerHTML = ''
+//     info.append(astroName, astroCraft)
+// }
+
+//attempt at displaying fetched data in span
 
 
 
+
+// function init() {
+//     getAstros();
+// }
+
+// init();
 
 // function dragElementPlacement(container, y) {
 //     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]

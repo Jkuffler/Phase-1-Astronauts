@@ -6,6 +6,7 @@
     cursor: move;
 }
 
+
 .astro-image:hover {
     box-shadow: 0 0 6px 1px rgb(116, 115, 115);
 }
@@ -35,3 +36,14 @@ html {
     padding: 100px;
     border: 1px solid black;
 } 
+
+#astroInfo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #astroInfoContainer {
+    height: 20vh;
+    text-align: center;
+  }
