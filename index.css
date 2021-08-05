@@ -47,3 +47,7 @@ html {
     height: 20vh;
     text-align: center;
   }
+
+h2, h3 {
+color: cornsilk;
+}

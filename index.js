@@ -36,6 +36,13 @@ const renderAstro = (astro) => {
         astroSpan.classList.remove('dragging');
     })
 
+    astroSpan.addEventListener('click', (e) => {
+        if(e.target.parentElement.parentElement.id === 'space-station'){
+            showAstroInfo(astro) 
+        }else {
+            alert('Take me to the Space Station!')
+        }
+    }) 
 }
 
 
@@ -54,69 +61,23 @@ const astrosContainer = () => {
 }
 //drag and drop feature works
 
+const showAstroInfo = (astro) => {
+    const astroName = document.createElement('h2')
+    astroName.innerHTML = astro.name
+
+    const craft = document.createElement('h3')
+    craft.innerHTML = `Craft: ${astro.craft}`
+
+    const astroInfo = document.querySelector('#astroInfo');
+    astroInfo.innerHTML = '';
+    astroInfo.append(astroName,craft)
+}
 
 
 
 function init() {
     getAstros();
-    // dragAstros();
     astrosContainer();
 }
 
 init();
-
-
-// const spanInfo = (astro) => {
-//     // const spanId = document.querySelectorAll()
-//     const astroName = document.createElement('h2')
-//     const astroCraft = document.createElement('h3')
-
-//     draggables.forEach(() => {
-//         draggables.addEventListener('click', () => {
-
-//         if( === astro.name){
-//             astroName.innerText = astro.name
-//             astroCraft.innerText = astro.craft
-//         }else{
-//             alert('Does not exist!')
-//         }
-
-//         })
-//     })
-//     let info = document.querySelector('#astroInfo')
-//     info.innerHTML = ''
-//     info.append(astroName, astroCraft)
-// }
-
-//attempt at displaying fetched data in span
-
-
-
-
-
-
-// function dragElementPlacement(container, y) {
-//     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
-
-//     draggableElements.reduce((closestEl, child) => {
-//         const box = child.getBoundingClientRect()
-//         console.log(box)
-//     }, {offset: Number.POSITIVE_INFINITY})
-// }
-
-
-
-
-// function allowDrop(ev) {
-//     ev.preventDefault();
-//   }
-  
-//   function drag(ev) {
-//     ev.dataTransfer.setData("text", ev.target.id);
-//   }
-  
-//   function drop(ev) {
-//     ev.preventDefault();
-//     var data = ev.dataTransfer.getData("text");
-//     ev.target.appendChild(document.getElementById(data));
-//   }
