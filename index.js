@@ -116,6 +116,7 @@ const showAstroInfo = (astro) => {
     const nationality = document.createElement('img')
 
     const wiki = document.createElement('a')
+    wiki.target = '_blank'
     const wikiLink = document.createTextNode('Wiki Bio')
     wiki.appendChild(wikiLink)
     wiki.title = 'Wiki Bio'
