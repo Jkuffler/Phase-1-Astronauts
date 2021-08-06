@@ -12,4 +12,4 @@ Bio should include
 
     3) Station
 
-    4) Number of days in space 
+    4) Bio link to wiki
