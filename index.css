@@ -23,8 +23,8 @@ html {
     background-image: url(space-images/space-station.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 200px;
-    padding: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 90px;
     border: 1px solid black;
 }
 
@@ -32,8 +32,8 @@ html {
     background-image: url(space-images/earth.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 300px;
-    padding: 100px;
+    margin-top: 90px;
+    padding-top  : 60px;
     border: 1px solid black;
 } 
 
