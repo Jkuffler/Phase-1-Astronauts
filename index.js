@@ -3,41 +3,41 @@ const extraInfo = [
     image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-usa.jpg",
     wikiInfo: "https://en.wikipedia.org/wiki/Mark_T._Vande_Hei"
     },
-    {name: "Oleg Novitsky",
+    {name: "Oleg Novitskiy",
     image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-russia.jpg",
-    wikiInfo: ""
+    wikiInfo: "https://en.wikipedia.org/wiki/Oleg_Novitsky"
     },
     {name: "Pyotr Dubrov",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-russia.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Pyotr_Dubrov"
     },
     {name: "Thomas Pesquet",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-france.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Thomas_Pesquet"
     },
     {name: "Megan McArthur",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-usa.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/K._Megan_McArthur"
     },
     {name: "Shane Kimbrough",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-usa.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Shane_Kimbrough"
     },
     {name: "Akihiko Hoshide",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-japan.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Akihiko_Hoshide"
     },
     {name: "Nie Haisheng",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-china.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Nie_Haisheng"
     },
     {name: "Liu Boming",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-china.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Liu_Boming_(astronaut)"
     },
     {name: "Tang Hongbo",
-    image: "",
-    wikiInfo: ""
+    image: "https://www.howmanypeopleareinspacerightnow.com/app/flags/flag-china.jpg",
+    wikiInfo: "https://en.wikipedia.org/wiki/Tang_Hongbo"
     }
 ]
 
