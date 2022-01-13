@@ -1,6 +1,6 @@
-# Phase-1-Astronauts
+# Astros in Space 2.0
 
-Phase 1 Astro will allow the user to select an image of an astronaut, then drag and drop it toward the target (a space station image perhaps).
+New version will allow same drag and drop feature; however, page load will make a fresh call to the API and display current Astros to keep app future-proof. This may change the data being displayed upon completing a drag-n-drop. Designing for the future also creates the issue of adding image urls to the page load request which will have to come from outside the original API.
 
 The idea is for the user to bring an image of an astronaut into another image and pop-up a brief bio about the selected astro.
 
